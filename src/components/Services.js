@@ -1,6 +1,9 @@
 import React from "react"
 import Title from "./Title"
 import services from "../constants/services"
+import {AiFillHtml5} from 'react-icons/ai';
+
+
 const Services = () => {
   return <section className="section bg-grey">
     <Title title="skills"/>
@@ -15,6 +18,9 @@ const Services = () => {
         <p className='service-text'>{text}</p>
         </article>
       })}
+    </div>
+    <div>
+    <AiFillHtml5 />
     </div>
   </section>
 }
