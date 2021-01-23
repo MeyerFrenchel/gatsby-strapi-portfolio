@@ -1,11 +1,15 @@
 import React from "react"
 import Title from "./Title"
 import services from "../constants/services"
-import {AiFillHtml5} from 'react-icons/ai';
+
+
 
 
 const Services = () => {
-  return <section className="section bg-grey">
+  return(
+    
+    <section className="section bg-grey">
+    
     <Title title="skills"/>
     <div className="section-center services-center">
       {services.map((service)=>{
@@ -19,10 +23,11 @@ const Services = () => {
         </article>
       })}
     </div>
-    <div>
-    <AiFillHtml5 />
-    </div>
   </section>
+    
+  )
+  
+  
 }
 
 export default Services

@@ -6,31 +6,29 @@ import Services from "../components/Services"
 import Jobs from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
+import SEO from "../components/SEO"
 
 
 export default ({ data }) => {
   const {
-    allStrapiProjects:{nodes:projects},
-    allStrapiBlogs:{nodes:blogs}
-} = data
-  
-  return(
+    allStrapiProjects: { nodes: projects },
+    allStrapiBlogs: { nodes: blogs },
+  } = data
+
+  return (
     <Layout>
-    <Hero />
-    <Services />
-    <Jobs />
-    <Projects projects={projects} title="featured projects"
-    showLink
-    />
-    <Blogs blogs={blogs} title="blog"
-    showLink/>
+      <SEO title="Home" description="this my home page" />
+      <Hero />
+      <Services />
+      <Jobs />
+      <Projects projects={projects} title="featured projects" showLink />
+      <Blogs blogs={blogs} title="latest articles" showLink />
     </Layout>
   )
 }
-
 export const query = graphql`
   {
-    allStrapiProjects(filter: {featured: {eq: true}}) {
+    allStrapiProjects(filter: { featured: { eq: true } }) {
       nodes {
         github
         id
@@ -50,8 +48,7 @@ export const query = graphql`
         }
       }
     }
-
-    allStrapiBlogs(sort: {fields: date, order: DESC}, limit: 3) {
+    allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
       nodes {
         slug
         content
@@ -71,4 +68,3 @@ export const query = graphql`
     }
   }
 `
-
