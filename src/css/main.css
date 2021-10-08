@@ -4,7 +4,7 @@ Fonts
 ===============
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@700&display=swap");
 
 /*
 =============== 
@@ -18,17 +18,17 @@ Variables
   --clr-primary-1: hsl(341, 100%, 49%);
   --clr-primary-2: hsl(341, 100%, 15%);
   --clr-primary-3: hsl(341, 100%, 21%);
-  --clr-primary-4:hsl(341, 100%, 34%);
-  --clr-primary-5:#ef0963;
+  --clr-primary-4: hsl(341, 100%, 34%);
+  --clr-primary-5: #ef0963;
   --clr-primary-dark: #0b0f10;
   --clr-secondary-dark: #000303;
   --clr-tertiary-dark: #1c2b2d;
   /* lighter shades of primary color */
   --clr-primary-6: hsl(341, 100%, 60%);
-  --clr-primary-7:  hsl(341, 100%, 68%);
-  --clr-primary-8:  hsl(341, 100%, 78%);
-  --clr-primary-9:  hsl(341, 100%, 87%);
-  --clr-primary-10:  hsl(341, 100%, 94%);
+  --clr-primary-7: hsl(341, 100%, 68%);
+  --clr-primary-8: hsl(341, 100%, 78%);
+  --clr-primary-9: hsl(341, 100%, 87%);
+  --clr-primary-10: hsl(341, 100%, 94%);
   /* darkest grey - used for headings */
   --clr-grey-1: hsl(209, 61%, 16%);
   --clr-grey-3: hsl(209, 34%, 30%);
@@ -41,7 +41,7 @@ Variables
   --clr-green-dark: hsl(125, 67%, 35%);
   --clr-red-dark: hsl(360, 67%, 44%);
   --clr-red-light: hsl(360, 71%, 66%);
-  --gradient: linear-gradient(90deg,hsl(341, 100%, 49%),#ef0963);
+  --gradient: linear-gradient(90deg, hsl(341, 100%, 49%), #ef0963);
   --clr-white: #fff;
   --clr-yellow: #80ffdb;
   --ff-primary: "Roboto", sans-serif;
@@ -156,7 +156,14 @@ p {
   background: var(--clr-primary-8);
 } */
 
-.btn {background-image: linear-gradient(to right, #f81f01 0%, #ee076e  51%,#f81f01  100%)}
+.btn {
+  background-image: linear-gradient(
+    to right,
+    #f81f01 0%,
+    #ee076e 51%,
+    #f81f01 100%
+  );
+}
 .btn {
   margin: 10px;
   padding: 10px 20px;
@@ -164,17 +171,17 @@ p {
   text-transform: uppercase;
   transition: 0.5s;
   background-size: 200% auto;
-  color: var(--clr-primary-10);            
+  color: var(--clr-primary-10);
   box-shadow: 0 0 20px #1c2b2d;
   border-radius: 10px;
   display: inline-block;
   font-size: 1rem;
-  font-family: 'Public Sans', sans-serif;
-  }
+  font-family: "Public Sans", sans-serif;
+}
 
 .btn:hover {
-   background-position: right center; /* change the direction of the change here */
-  
+  background-position: right center; /* change the direction of the change here */
+
   text-decoration: none;
   transform: translateY(-1px);
   box-shadow: 0 0.2rem 0.7rem var(--clr-primary-5);
@@ -191,9 +198,6 @@ p {
   margin: 0 auto;
   margin-top: 3rem;
 }
-
-
-
 
 /* section */
 .section {
@@ -224,7 +228,6 @@ p {
   text-align: center;
 }
 .bg-grey {
-  
   background: transparent;
 }
 /* page links */
@@ -318,28 +321,26 @@ Navbar
     align-items: center;
   }
 
-  .logotype{
-    
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: -.05em;
+  .logotype {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: -0.05em;
     color: var(--clr-yellow);
   }
-   @keyframes blink {
-  
+  @keyframes blink {
     0% {
-      opacity: .2;
+      opacity: 0.2;
     }
-  
+
     40% {
       opacity: 1;
     }
-  
+
     100% {
-      opacity: .1;
+      opacity: 0.1;
       color: #ef0963;
     }
   }
-  
+
   .logotype span {
     animation-name: blink;
     animation-duration: 5s;
@@ -585,7 +586,7 @@ Services
 
 .service-text {
   font-size: 1.2rem;
-  
+  cursor: pointer;
 }
 
 .service .underline {
@@ -598,7 +599,7 @@ Services
 .service:hover {
   /* background-image: linear-gradient(#f6004c 10%, #000000 100%); */
   background-image: linear-gradient(145deg, #f81f01 0%, #ee076e 100%);
-  
+
   /* background: var(--clr-primary-5); */
   color: var(--clr-primary-9);
 }
@@ -730,7 +731,7 @@ Projects
   border-top-right-radius: var(--radius);
   height: 19rem;
   z-index: 1;
-  transition: transform .28s ease;
+  transition: transform 0.28s ease;
 }
 .project-img::after {
   content: "";
@@ -742,7 +743,7 @@ Projects
   background-image: linear-gradient(#f6004c 10%, #000000 100%);
   /* background: var(--gradient); */
   opacity: 0.85;
-  transition: transform .55s ease;
+  transition: transform 0.55s ease;
   transform: scale(1.13) translateZ(0);
   backface-visibility: hidden;
   /* transition: var(--transition); */

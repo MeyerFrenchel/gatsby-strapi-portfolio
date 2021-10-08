@@ -4,7 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-
 module.exports = {
   siteMetadata: {
     title: "Meyer Frenchel Portfolio",
@@ -12,7 +11,7 @@ module.exports = {
     author: "Meyer Frenchel",
     linkedInUsername: "https://www.linkedin.com/in/meyer-frenchel-5bb7191ab/",
     image: "/portfolio-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://meyerfrenchel.com/",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -34,8 +33,8 @@ module.exports = {
         //   contentTypes : `jobs`, `projects`, `blogs`,
         //   singleType : `about`
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
-        contentTypes: [`jobs`,`projects`,`blogs`],
-        singleTypes : [`about`],
+        contentTypes: [`jobs`, `projects`, `blogs`],
+        singleTypes: [`about`],
       },
     },
     {
