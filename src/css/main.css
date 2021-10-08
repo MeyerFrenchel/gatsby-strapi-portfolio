@@ -1120,6 +1120,7 @@ Blog Template
 .blog-template h1,
 .blog-template h2 {
   text-align: center;
+  margin-top: 7%;
 }
 .blog-template ul {
   margin-top: 2rem;
@@ -1158,4 +1159,7 @@ Blog Template
   width: 15rem;
   height: 15rem;
   margin: 3rem 0;
+}
+.blog-template .btn {
+  color: var(--clr-primary-10);
 }
